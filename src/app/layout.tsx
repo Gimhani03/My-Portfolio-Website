@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Navbar5 } from "../components/navbar-5";
+import { AuroraBackground } from "../components/ui/aurora-background";
+
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +32,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuroraBackground className="min-h-screen h-auto">
+          <div className="relative z-10 w-full min-h-screen">
+            <Navbar5 />
+            <div className="flex-1">
+              {children}
+            </div>
+          </div>
+        </AuroraBackground>
       </body>
     </html>
   );
