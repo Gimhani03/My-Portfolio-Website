@@ -1,4 +1,4 @@
-# My Portfolio
+# My Portfolio 🖊️
 
 A modern, responsive portfolio website built with Next.js 15, featuring an animated aurora background and elegant design.
 
@@ -10,11 +10,15 @@ A modern, responsive portfolio website built with Next.js 15, featuring an anima
 
 - **Aurora Background Animation** - Beautiful animated gradient background using custom CSS
 - **Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
-- **Typewriter Effect** - Dynamic text animation on the homepage
-- **Glowing Image Border** - Animated profile picture with glow effects
+- **Typewriter Effect** - Dynamic text animation on the homepage with customizable speed and loop options
+- **Glowing Image Border** - Animated profile picture with glow effects and hover interactions
 - **Modern UI Components** - Built with shadcn/ui and Radix UI
 - **Fast Performance** - Powered by Next.js 15 with Turbopack
 - **Accessible** - WCAG compliant navigation and components
+- **Contact Form Integration** - EmailJS integration for seamless contact form submissions
+- **Mobile-First Navigation** - Responsive navigation with mobile sheet component
+- **Project Showcase** - Dedicated projects page with detailed project descriptions and GitHub links
+- **Professional Portfolio Layout** - Clean, modern design perfect for showcasing development work
 
 ## 🛠️ Tech Stack
 
@@ -25,6 +29,8 @@ A modern, responsive portfolio website built with Next.js 15, featuring an anima
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Animations:** Custom CSS animations + tw-animate-css
 - **Build Tool:** [Turbopack](https://turbo.build/pack)
+- **Email Service:** [EmailJS](https://www.emailjs.com/) for contact form functionality
+- **Form Handling:** React refs and EmailJS integration for seamless form submissions
 
 ## 📁 Project Structure
 
@@ -37,6 +43,8 @@ my-portfolio/
 │   │   ├── page.tsx            # Homepage
 │   │   ├── projects/           # Projects page
 │   │   │   └── page.tsx
+│   │   ├── contact/            # Contact page with EmailJS integration
+│   │   │   └── page.tsx
 │   │   └── home/               # Alternative home route
 │   │       └── page.tsx
 │   ├── components/             # React components
@@ -47,6 +55,10 @@ my-portfolio/
 │   │       ├── typewriter-text.tsx
 │   │       ├── button.tsx
 │   │       ├── navigation-menu.tsx
+│   │       ├── sheet.tsx
+│   │       ├── accordion.tsx
+│   │       ├── input.tsx
+│   │       ├── label.tsx
 │   │       └── ...
 │   └── lib/
 │       └── utils.ts            # Utility functions
@@ -124,6 +136,22 @@ Update the content in `src/components/homepage.tsx`:
 <p>Your bio and description...</p>
 ```
 
+### Contact Form Configuration
+
+To set up the contact form with EmailJS:
+
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Update the service configuration in `src/app/contact/page.tsx`:
+
+```tsx
+emailjs.sendForm(
+  "your_service_id",     // Replace with your EmailJS service ID
+  "your_template_id",    // Replace with your EmailJS template ID
+  form.current!,
+  "your_public_key"      // Replace with your EmailJS public key
+)
+```
+
 ### Navigation
 
 Modify navigation links in `src/components/navbar-5.tsx`.
@@ -138,9 +166,40 @@ The portfolio is fully responsive with breakpoints:
 
 ## 🎯 Pages
 
-- **Homepage (/)** - Main landing page with intro and call-to-action
-- **Projects (/projects)** - Showcase of your work and projects
-- **Home (/home)** - Alternative home route
+- **Homepage (/)** - Main landing page with intro and call-to-action buttons
+- **Projects (/projects)** - Showcase of development projects including:
+  - Jewelify Web Application (PHP/HTML/CSS/JavaScript)
+  - Food Inspector Web Application (C#/Windows Forms/SQL Server)  
+  - Medicine Delivery Mobile App (Flutter/Dart/Firebase)
+  - Movie Discovery Mobile App (React Native/TypeScript/TMDB API)
+- **Contact (/contact)** - Contact form with EmailJS integration for direct messaging
+- **Home (/home)** - Alternative home route with same homepage content
+
+## 📧 Contact Form Features
+
+The portfolio includes a fully functional contact form with the following features:
+
+- **EmailJS Integration** - Direct email sending without backend server
+- **Form Validation** - Required field validation for name, email, and message
+- **Responsive Design** - Mobile-friendly form layout
+- **Success/Error Handling** - User feedback on form submission
+- **Professional Styling** - Clean, modern form design with hover effects
+
+### Setting up EmailJS
+
+1. Create a free account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service (Gmail, Outlook, etc.)
+3. Create an email template
+4. Replace the configuration in `src/app/contact/page.tsx`:
+
+```javascript
+emailjs.sendForm(
+  "your_service_id",     // Your EmailJS service ID
+  "your_template_id",    // Your EmailJS template ID  
+  form.current!,
+  "your_public_key"      // Your EmailJS public key
+)
+```
 
 ## 🚀 Deployment
 
@@ -176,7 +235,15 @@ The portfolio is fully responsive with breakpoints:
 
 ### Components
 
-All UI components follow the shadcn/ui design system for consistency.
+All UI components follow the shadcn/ui design system for consistency:
+
+- **Button** - Multiple variants (default, outline, ghost, etc.)
+- **Navigation Menu** - Responsive navigation with dropdown support  
+- **Sheet** - Mobile-friendly sidebar/overlay component
+- **Accordion** - Collapsible content sections
+- **Input/Label** - Form input components
+- **Typewriter** - Custom animated text component
+- **Aurora Background** - Custom gradient animation component
 
 ## 📝 License
 
@@ -196,12 +263,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - **GitHub:** [Your GitHub](https://github.com/yourusername)
 
+*Note: The portfolio includes a built-in contact form powered by EmailJS for direct messaging.*
+
 ## 🙏 Acknowledgments
 
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
 - [Next.js](https://nextjs.org/) for the amazing React framework
 - [Vercel](https://vercel.com/) for hosting and deployment
+- [EmailJS](https://www.emailjs.com/) for seamless contact form integration
+- [Radix UI](https://www.radix-ui.com/) for accessible headless UI components
+- [Lucide React](https://lucide.dev/) for the beautiful icon library
 
 ---
 
