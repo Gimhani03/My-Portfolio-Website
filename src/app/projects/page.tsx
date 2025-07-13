@@ -127,6 +127,50 @@ const Projects = () => {
               </a>
             </div>
           </div>
+          <div className="py-8 flex flex-wrap md:flex-nowrap">
+            <div className="md:flex-grow">
+              <h2 className="text-2xl font-medium text-gray-900 title-font mb-5">
+                Movie Discovery Mobile Application
+              </h2>
+              <h4 className="font-medium text-gray-600 title-font mb-3">
+                Technologies: React Native, Tailwind CSS, Appwrite, TMDB API, Expo, TypeScript, NativeWind
+              </h4>
+              <p className="leading-relaxed">
+                Designed and developed a cross-platform movie discovery mobile
+                application using React Native, Expo, and TypeScript to provide
+                users with seamless access to comprehensive movie information.
+                The system integrates The Movie Database (TMDB) API v3 for
+                real-time movie data retrieval, advanced search functionality
+                with debounced input optimization, and trending movie rankings
+                with gradient overlay visualizations. Implemented modern UI
+                architecture using NativeWind (TailwindCSS) with custom
+                components including responsive movie cards, interactive search
+                interfaces, and masked view elements for enhanced user
+                experience. Built robust navigation system using Expo Router
+                with file-based routing and integrated Appwrite backend services
+                for search analytics and user interaction tracking across iOS,
+                Android, and Web platforms.
+              </p>
+              <a
+                className="text-blue-500 inline-flex items-center mt-4"
+                href="https://github.com/Gimhani03/Movie-App"
+              >
+                Github Link
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
