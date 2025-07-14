@@ -21,7 +21,7 @@ export const Homepage = () => {
         <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
             <Typewriter
-              text={["Hello! I'm a Web Developer / Mobile App Developer / UI/UX Designer"]}
+              text={["Hello! I'm a Web Developer / Mobile App Developer and UI/UX Designer"]}
               speed={100}
               loop={true}
               className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
