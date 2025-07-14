@@ -17,10 +17,10 @@ export default function ContactPage() {
         "VwX03xaCXPa3v32LZ"
       )
       .then(
-        (result) => {
+        () => {
           alert("Message sent successfully!");
         },
-        (error) => {
+        () => {
           alert("Something went wrong. Please try again.");
         }
       );
