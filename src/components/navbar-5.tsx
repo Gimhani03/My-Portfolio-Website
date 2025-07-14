@@ -1,22 +1,12 @@
 "use client";
-import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -27,39 +17,6 @@ import {
 } from "@/components/ui/sheet";
 
 export const Navbar5 = () => {
-  const features = [
-    {
-      title: "Dashboard",
-      description: "Overview of your activity",
-      href: "#",
-    },
-    {
-      title: "Analytics",
-      description: "Track your performance",
-      href: "#",
-    },
-    {
-      title: "Settings",
-      description: "Configure your preferences",
-      href: "#",
-    },
-    {
-      title: "Integrations",
-      description: "Connect with other tools",
-      href: "#",
-    },
-    {
-      title: "Storage",
-      description: "Manage your files",
-      href: "#",
-    },
-    {
-      title: "Support",
-      description: "Get help when needed",
-      href: "#",
-    },
-  ];
-
   return (
     <>
     <section className="py-4">
