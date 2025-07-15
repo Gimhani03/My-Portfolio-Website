@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 15, featuring an anima
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](http://localhost:3001) <!-- Replace with your deployed URL -->
+[View Live Portfolio](https://gimhanisamanalee.netlify.app/)
 
 ## ✨ Features
 
@@ -115,10 +115,10 @@ Edit the CSS variables in `src/app/globals.css`:
 
 ```css
 :root {
-  --blue-500: #6b7280;    /* Primary aurora color */
-  --indigo-300: #9ca3af;  /* Secondary aurora color */
-  --blue-300: #d1d5db;    /* Tertiary aurora color */
-  /* ... */
+  --blue-500: #6b7280;    
+  --indigo-300: #9ca3af;  
+  --blue-300: #d1d5db;    
+  
 }
 ```
 
@@ -131,7 +131,7 @@ Replace `public/Images/myphoto.jpg` with your own profile picture.
 Update the content in `src/components/homepage.tsx`:
 
 ```tsx
-// Update your name, bio, and links
+
 <Typewriter text={["Hello! I'm Your Name"]} />
 <p>Your bio and description...</p>
 ```
@@ -145,10 +145,10 @@ To set up the contact form with EmailJS:
 
 ```tsx
 emailjs.sendForm(
-  "your_service_id",     // Replace with your EmailJS service ID
-  "your_template_id",    // Replace with your EmailJS template ID
+  "your_service_id",     
+  "your_template_id",    
   form.current!,
-  "your_public_key"      // Replace with your EmailJS public key
+  "your_public_key"      
 )
 ```
 
