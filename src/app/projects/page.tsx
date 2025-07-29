@@ -133,7 +133,8 @@ const Projects = () => {
                 Movie Discovery Mobile Application
               </h2>
               <h4 className="font-medium text-gray-600 title-font mb-3">
-                Technologies: React Native, Tailwind CSS, Appwrite, TMDB API, Expo, TypeScript, NativeWind
+                Technologies: React Native, Tailwind CSS, Appwrite, TMDB API,
+                Expo, TypeScript, NativeWind
               </h4>
               <p className="leading-relaxed">
                 Designed and developed a cross-platform movie discovery mobile
@@ -154,6 +155,46 @@ const Projects = () => {
               <a
                 className="text-blue-500 inline-flex items-center mt-4"
                 href="https://github.com/Gimhani03/Movie-App"
+              >
+                Github Link
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="py-8 flex flex-wrap md:flex-nowrap">
+            <div className="md:flex-grow">
+              <h2 className="text-2xl font-medium text-gray-900 title-font mb-5">
+                Fullstack To-do Web Application
+              </h2>
+              <h4 className="font-medium text-gray-600 title-font mb-3">
+                Technologies: React, Node.js, Express, MongoDB, Tailwind CSS
+              </h4>
+              <p className="leading-relaxed">
+                Built a comprehensive todo management application using React,
+                Node.js, Express.js, and MongoDB, featuring responsive design
+                with Tailwind CSS and real-time statistics. Developed a robust
+                RESTful API with six endpoints supporting complete CRUD
+                operations and MongoDB integration via Mongoose ODM. The
+                application includes priority-based task management, due date
+                tracking, offline functionality, and professional error
+                handling. Followed industry best practices with separate
+                client-server architecture and modern development workflow using
+                Vite, ESLint, and Nodemon.
+              </p>
+              <a
+                className="text-blue-500 inline-flex items-center mt-4"
+                href="https://github.com/Gimhani03/React-To-do-app-2"
               >
                 Github Link
                 <svg
