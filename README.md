@@ -258,10 +258,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Portfolio:** [Your Website](https://your-website.com)
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **GitHub:** [Your GitHub](https://github.com/yourusername)
+- **Portfolio:** [My Website](https://gimhanisamanalee.netlify.app/)
+- **Email:** gimhanisamanalee@gmail.com
+- **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/gimhani-samanalee/)
+- **GitHub:** [My GitHub](https://github.com/Gimhani03)
 
 *Note: The portfolio includes a built-in contact form powered by EmailJS for direct messaging.*
 
